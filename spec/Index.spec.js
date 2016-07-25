@@ -10,8 +10,10 @@ describe('Directive Test', function() {
 
 	it('should increment when we click on it', function () {
 		counter.click();
+		counter.click();
+		counter.click();
 
-		expect(count.getInnerHtml()).toEqual('Current count: 1');
+		expect(count.getInnerHtml()).toEqual('Current count: 3');
 	});
 
 });
